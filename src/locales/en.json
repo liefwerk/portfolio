@@ -1,0 +1,30 @@
+{
+    "nav": {
+        "nav": "fr"
+    },
+    "hero": {
+        "h1": "Your custom website,<br>handcrafted with care",
+        "sub": "from E-Commerce to landing pages and web applications.",
+        "desc": "I am a self-employed front-end web developer, always learning and improving my skills. My everyday languages are French, English and Spanish.",
+        "pill-1": "#webdev",
+        "pill-2": "#projectmgmt",
+        "pill-3": "#graphics",
+        "pill-4": "#seo",
+        "status": "Currently available for work !",
+        "btn": "Hire me on Malt"
+    },
+    "portfolio": {
+        "h2": "What I've been building",
+        "t1": "BIO TRUCK",
+        "p1": "A custom made WordPress theme (based on WP Ocean) to host more than 300 products.",
+        "t2": "DOCKS-52B",
+        "p2": "A simple one-page website for a local business. Made with ParcelJS and Sass.",
+        "t3": "WEBRADIO ALPHA",
+        "p3": "Single Page Application made with VueJS. Uses the YouTube IFRAME API and Supabase in the backend."
+    },
+    "techno": {
+        "h2": "Technologies I can use to build your project:",
+        "lang": "Languages",
+        "env": "Working Environments"
+    }
+}

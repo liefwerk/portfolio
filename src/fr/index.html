@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Developper Front-End - Woocommerce & VueJS</title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Alegreya+Sans:wght@300;400;500;700;800&family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".././style/main.css">
+</head>
+
+<body class="font-body overflow-x-hidden">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="grid grid-cols-1 gap-0">
+
+        <nav class="flex flex-row justify-between justify-items-center py-4 px-8 sm:px-10 md:px-12 lg:px-14 xl:px-20 bg-white shadow sm:items-baseline w-full bg-gray-50 z-50">
+            <div class="flex flex-row flew-nowrap self-center">
+                <img src=".././img/logo.svg" class="w-4 h-full inline mr-2 my-logo">
+                <a href="#" class="text-2xl no-underline text-grey-darkest hover:text-blue-dark">
+                    Accollade Polyglotte
+                </a>
+            </div>
+            <div class="self-center">
+                <a href="../index.html" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">En</a>
+                <!--<a href="/two" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Two</a>
+                <a href="/three" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">Three</a> -->
+            </div>
+        </nav>
+
+        <div class="w-full bg-local c-hero bg-red-600 text-gray-900">
+            <div class="container py-16 max-w-max flex flex-row flex-wrap md:flex-nowrap justify-center items-center">
+                <div class="w-full md:w-2/3 lg:w-1/2">
+                    <h1 class="text-5xl font-display font-extrabold">Votre page web personnalisée,<br>faite avec soin</h1>
+                    <p class="text-lg mt-2">Boutiques en ligne, pages vitrines et applications web.</p>
+                    <p class="text-xl mt-6">Je suis un développeur front-end toujours en état de curiosité et de dépassement de soi. Je parle le Français, l'Anglais et l'Espagnol.</p>
+                    <ul class="my-2 text-gray-700">
+                        <li class="inline-block mr-1 mb-1 px-3 py-0.5 bg-red-300 rounded-full cursor-default"><span>#devweb</span></li>
+                        <li class="inline-block mr-1 mb-1 px-3 py-0.5 bg-red-200 rounded-full cursor-default"><span>#mgmtdeprojet</span></li>
+                        <li class="inline-block mr-1 mb-1 px-3 py-0.5 bg-red-100 rounded-full cursor-default"><span>#graphisme</span></li>
+                        <li class="inline-block mr-1 mb-1 px-3 py-0.5 bg-red-50 rounded-full cursor-default"><span>#référencement</span></li>
+                    </ul>
+                    <p class="mt-6 text-lg text-2xl font-bold text-yellow-200">Actuellement disponible !</p>
+                    <form action="https://www.malt.fr/profile/nathanaeljagenisellier1" method="get" target="_blank">
+                        <button type="submit" class="bg-yellow-200 hover:bg-gray-100 hover:text-gray-900 text-gray-800 text-lg font-semibold my-3 py-2 px-4 rounded shadow">Engagez-moi sur Malt</button>
+                    </form>
+                </div>
+                <div class="w-full pt-8 self-end z-10 md:w-1/3 lg:w-1/2">
+                    <img class="w-4/5 mx-auto md:w-full lg:w-9/12" src=".././img/undraw_Code_thinking_re_gka2.svg">
+                </div>
+            </div>
+        </div>
+        <div class="w-full text-gray-800 text-center">
+            <h2 class="text-3xl my-12 mb-16" data-t="porfolio.h2">Ce que j'ai construis</h2>
+            <div class="container flex flex-row flex-wrap justify-center mx-auto mb-8">
+                <div class="flex flex-row flex-wrap justify-center max-w-sm mx-3 mb-8 bg-local c-portfolio-item bg-yellow-100 shadow rounded-md">
+                    <a href="https://bio-truck.fr" target="_blank">
+                        <img class="w-auto h-auto" src=".././img/biotruck.jpeg">
+                        <div class="px-6 py-4">
+                            <h3 class="text-2xl pb-2 font-semibold">BIO TRUCK</h3>
+                            <p>Un WordPress personnalisé (basé sur WP Ocean) pour héberger plus de 300 produits.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-row flex-wrap justify-center max-w-sm mx-3 mb-8 bg-local c-portfolio-item bg-yellow-200 shadow rounded-md">
+                    <a href="https://docks-52b.fr" target="_blank">
+                        <img class="w-auto h-auto" src=".././img/docks52b.jpeg">
+                        <div class="px-6 py-4">
+                            <h3 class="text-2xl pb-2 font-semibold">DOCKS-52B</h3>
+                            <p>Un site vitrine pour une entreprise locale. Faite avec ParcelJs et Sass.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-row flex-wrap justify-center max-w-sm mx-3 mb-8 bg-local c-portfolio-item bg-yellow-300 shadow rounded-md">
+                    <a href="https://docks-52b.fr" target="_blank">
+                        <img class="w-auto h-auto" src=".././img/webradio_alpha.jpeg">
+                        <div class="px-6 py-4">
+                            <h3 class="text-2xl pb-2 font-semibold">WEBRADIO ALPHA</h3>
+                            <p>Une application web construite avec VueJs qui utilise l'API Iframe de YouTube et le service Supabase pour sa base de donnée.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-gray-100 text-gray-800 bg-local bg-technos">
+        <div class="container mx-auto py-16 text-center">
+            <h2 class="text-3xl">Ce que je peux utiliser pour réaliser votre site web</h2>
+            <h3 class="text-xl pt-4">Langages</h3>
+            <div class="flex flex-wrap justify-center my-4">
+                <div class="py-6 px-6 hover:shadow transition duration-750 ease-in-out">
+                    <img src=".././img/html5.png" class="mx-auto w-16">
+                    <p class="text-center">HTML5</p>
+                </div>
+                <div class="py-6 px-6 hover:shadow transition duration-750 ease-in-out">
+                    <img src=".././img/css3.png" class="mx-auto w-16">
+                    <p class="text-center">CSS3</p>
+                </div>
+                <div class="py-6 px-6 hover:shadow transition duration-750 ease-in-out">
+                    <img src=".././img/js.png" class="mx-auto w-16">
+                    <p class="text-center">Javascript</p>
+                </div>
+                <div class="py-6 px-6 hover:shadow transition duration-750 ease-in-out">
+                    <img src=".././img/ruby.png" class="mx-auto w-16">
+                    <p class="text-center">Ruby</p>
+                </div>
+                <div class="py-6 px-6 hover:shadow transition duration-750 ease-in-out">
+                    <img src=".././img/python.png" class="mx-auto w-16">
+                    <p class="text-center">Python</p>
+                </div>
+            </div>
+            <h3 class="text-xl">Environnements de Travail</h3>
+            <div class="flex flex-wrap justify-center my-4">
+                <div class="py-6 px-6 hover:shadow transition duration-750 ease-in-out">
+                    <img src=".././img/wordpress.png" class="mx-auto w-16">
+                    <p class="text-center">Wordpress</p>
+                </div>
+                <div class="py-6 px-6 hover:shadow transition duration-750 ease-in-out">
+                    <img src=".././img/woocommerce.png" class="mx-auto w-16">
+                    <p class="text-center">Woocommerce</p>
+                </div>
+                <div class="py-6 px-6 hover:shadow transition duration-750 ease-in-out">
+                    <img src=".././img/vuejs.png" class="mx-auto w-16">
+                    <p class="text-center">VueJS</p>
+                </div>
+                <div class="py-6 px-6 hover:shadow transition duration-750 ease-in-out">
+                    <img src=".././img/ruby-on-rails.png" class="mx-auto w-16">
+                    <p class="text-center">Ruby on Rails</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bg-gray-800 text-white px-8 py-2 text-right font-mono">
+            <p>© 2021 Accollade Polyglotte - Nathanaël Jageni</p>
+        </div>
+    </footer>
+    <!-- <script src="./js/index.js" async defer></script> -->
+</body>
+
+</html>

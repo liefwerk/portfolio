@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.c-hero {
+    background-image: url('../img/binding-light.png');
+}
+
+.c-technos {
+    background-image: url('../img/gradient-squares.png');
+}
+
+.c-portfolio-item {
+    background-image: url('../img/grilled-noise.png');
+}
+
+.c-code {
+    background-image: url('../img/code_transparent.png');
+}
+
+.my-logo {
+    height: 100%;
+}

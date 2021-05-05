@@ -1,0 +1,320 @@
+$light-shades: #F3EDE2;
+$light-accent: #C7A583;
+$main-color: #C9A291;
+$dark-accent: #818A94;
+$dark-shades: #B46155;
+$dark-text: #280303;
+$mapH: 70vh;
+$null: 0;
+$font: 'Special Elite', cursive;
+$font-p: 'Roboto Slab', cursive;
+
+// importation de la font
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+// mise en place des règles pour le responsive
+@mixin for-size($range) {
+    $phone-upper-boundary: 600px;
+    $tablet-portrait-upper-boundary: 900px;
+    $tablet-landscape-upper-boundary: 1200px;
+    $desktop-upper-boundary: 1800px;
+  
+    @if $range == phone-only {
+      @media (max-width: #{$phone-upper-boundary - 1}) { @content; }
+    } @else if $range == tablet-portrait-up {
+      @media (min-width: $phone-upper-boundary) { @content; }
+    } @else if $range == tablet-landscape-up {
+      @media (min-width: $tablet-portrait-upper-boundary) { @content; }
+    } @else if $range == desktop-up {
+      @media (min-width: $tablet-landscape-upper-boundary) { @content; }
+    } @else if $range == big-desktop-up {
+      @media (min-width: $desktop-upper-boundary) { @content; }
+    }
+  }
+
+body {
+    background: $light-shades;
+    margin: $null;
+    overflow-x: hidden;
+}
+
+// HEADING
+// Bouton
+
+.toggle-button {
+    position: fixed;
+    width: 2em;
+    height: 2em;
+    padding: 4px;
+    transition: 0.25s;
+    z-index: 115;
+    margin: 1em 2em;
+    right: 0;
+  }
+.toggle-button:hover {
+    cursor: pointer;
+}
+.toggle-button .menu-bar {
+    position: absolute;
+    border-radius: 2px;
+    width: 80%;
+    transition: .5s;
+}
+    .toggle-button .menu-bar-top {
+    border: 4px solid $light-shades;
+    border-bottom: none;
+    top: 0;
+    box-shadow: 1px 1px 5px black;
+}
+.toggle-button .menu-bar-middle {
+    height: 4px;
+    background-color: $light-shades;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    top: 4px;
+    box-shadow: 1px 1px 5px black;
+}
+.toggle-button .menu-bar-bottom {
+    border: 4px solid $light-shades;
+    border-top: none;
+    top: 22px;
+    box-shadow: 1px 1px 5px black;
+}
+.button-open .menu-bar-top {
+    transform: rotate(45deg) translate(8px, 8px);
+    transition: .5s;
+    box-shadow: 1px 1px 5px black;
+}
+.button-open .menu-bar-middle {
+    transform: translate(230px);
+    transition: .1s ease-in;
+    opacity: 0;
+    box-shadow: 1px 1px 5px black;
+}
+.button-open .menu-bar-bottom {
+    transform: rotate(-45deg) translate(8px, -7px);
+    transition: .5s;
+    box-shadow: 1px 1px 5px black;
+}
+
+// wrap du menu
+.menu-wrap {
+    background-color: $main-color;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 280px;
+    margin-right: -280px;
+    font-size: 1em;
+    font-weight: 700;
+    overflow: auto;
+    transition: .25s;
+    z-index: 110;
+    right: 0;
+}
+
+.menu-show {
+    margin-right: 0;
+    box-shadow: 4px 0px 13px black;
+}
+
+nav {
+    background: $light-shades;
+    box-shadow: -1px -4px 12px black;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+ul {
+    margin: $null;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: left;
+    padding: 2em 0;
+}
+
+li {
+    padding: 0 1em;
+    margin: 1em .5em;
+}
+
+li a {
+    color: $dark-shades;
+    text-decoration-line: none;
+    font-family: $font;
+    font-size: 1.2rem;
+}
+
+#header{
+    align-items: center;
+    justify-content: center;
+    display: none;
+    font-size: 1.6em;
+    height: 2.5em;
+    margin: 0;
+    background: $dark-shades;
+    color: $light-shades;
+    
+
+    @include for-size(phone-only){
+        display: none;
+    }
+
+    @include for-size(tablet-landscape-up){
+        display: flex;
+    }
+}
+
+#copyright{
+    bottom: 0;
+    position: absolute;
+    font-size: 1rem;
+    margin: auto;
+    padding: 1em;
+    color: $light-shades;
+    text-align: end;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: $light-accent;
+    text-align: center;
+    font-family: $font;
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 2.2rem;
+
+    @include for-size(phone-only){
+        font-size: 1.5rem;
+    }
+
+}
+
+p {
+    color: $dark-accent;
+    font-family: $font;
+    font-size: 1.5rem;
+    font-variant: initial;
+    text-align: center;
+
+    @include for-size(phone-only){
+        font-size: 1rem;
+    }
+}
+
+.button-primary{
+    background: $light-shades;
+    border: none;
+    border-radius: 6em;
+    padding: 1em;
+    font-variant: all-small-caps;
+    font-size: 1.2rem;
+    font-family: "Special Elite", cursive;
+    display: block;
+    margin: 2em auto;
+    cursor: pointer;
+    transition: ease-in-out .35s;
+}
+
+// CSS POUR LA CARTE INTERACTIVE
+#map1 {
+    height: $mapH;
+    z-index: 99;
+
+    @include for-size(phone-only){
+        height: 80vh;
+    }
+}
+
+.new_height {
+    height: 85vh !important;
+}
+
+.pop-white > div > div > p {
+    font-size: .8rem;
+}
+
+// CSS POUR LA DESCRIPTION DU PROJET
+
+.projet{
+
+    padding: 1em 0;
+
+    @include for-size(phone-only){
+        padding: 3rem;
+    }
+
+}
+
+// CSS POUR LES DERNIERES PHOTOS
+
+.img-border {
+    box-shadow: 1px 1px 5px #686868;
+    border-radius: 4px;
+}
+
+#photo-container{
+    max-width: 85%;
+    margin: 3em auto;
+}
+
+#wrapper-photo{
+    background: rgb(243, 243, 243);
+    padding: 3rem 0;
+
+    @include for-size(phone-only){
+        padding: 3rem 2rem;
+    }
+}
+
+.cadre-full > img {
+    box-shadow: 1px 1px 4px #101010;
+}
+
+.slick-prev::before, .slick-next::before{
+    color: $dark-shades;
+}
+
+.slick-slide {
+    width: 225px;
+    margin: 0 1.1em;
+}
+
+.slick-list{
+    padding: .5em;
+}
+
+.slick-lightbox-slick-caption {
+    font-size: 1.4rem;
+    color: $light-shades;
+    padding-top: 2rem;
+    font-family: $font-p;
+}
+// FOOTER
+
+.footer {
+    max-width: 100%;
+    background: rgb(17, 17, 17);
+    padding: 2em 1em;
+
+    h3{
+        color: $dark-shades;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: $light-accent;
+
+        @include for-size(phone-only){
+            font-size: 1rem;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
