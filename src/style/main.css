@@ -1,6 +1,18 @@
+/* eslint-disable no-use-before-define */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.link {
+    @apply text-blue-400 hover:underline;
+}
+.list {
+    @apply pl-2 my-2;
+}
+.list-border {
+    @apply border-solid border-l-4 border-yellow-300;
+}
+
 .c-hero {
     background-image: url('../img/binding-light.png');
 }
