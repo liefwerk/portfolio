@@ -4,3 +4,4 @@ dist
 
 # Files
 .parcel-cache
+*.gz
