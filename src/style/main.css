@@ -32,3 +32,7 @@
 .my-logo {
     height: 100%;
 }
+
+.leading-none {
+    line-height: 1;
+} 
