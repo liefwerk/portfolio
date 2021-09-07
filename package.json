@@ -2,7 +2,7 @@
     "name": "portfolio-v3",
     "license": "BSD-3-Clause",
     "scripts": {
-        "start": "parcel serve ./src/index.html ./src/fr/index.html ./src/about/index.html -p 8080",
+        "start": "parcel serve ./src/index.html ./src/fr/index.html ./src/about/index.html -p 8090",
         "build": "parcel build ./src/index.html ./src/fr/index.html ./src/about/index.html",
         "i18n": "static-i18n -l en -i en -i fr"
     },
