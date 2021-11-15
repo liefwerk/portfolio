@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Developper Front-End - Woocommerce & VueJS</title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Alegreya+Sans:wght@300;400;500;700;800&family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style/main.css">
+</head>
+
+<body class="font-body overflow-x-hidden">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="grid grid-cols-1 gap-0">
+
+        <nav class="flex flex-row justify-between justify-items-center py-4 px-8 sm:px-10 md:px-12 lg:px-14 xl:px-20 bg-gradient-to-r from-yellow-300 to-red-400 shadow sm:items-baseline w-full bg-gray-50 z-50">
+            <div class="flex flex-row flew-nowrap self-center items-center">
+                <img src="../../img/logo.svg" class="w-4 h-full inline mr-2 my-logo">
+                <a href="/" class="text-lg md:text-xl no-underline leading-none text-grey-darkest hover:text-blue-dark">
+                    Accolade Polyglotte
+                </a>
+            </div>
+            <div class="self-center">
+                <!---<a href="../fr/index.html" class="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2" data-t="nav.lang_1">fr</a>-->
+            </div>
+        </nav>
+
+        <div clas="w-full">
+            <div class="container my-8 md:my-16 md:mx-16">
+                <h1 class="text-4xl font-display font-extrabold">About Me</h1>
+                <div class="my-6 md:my-8">
+                    <p>I am Nathanael Jageni-Sellier.</p>
+                    <p>I live in France, but I am planning on living in Montevideo (currently stuck during this pandemic situation).</p>
+                    <br>
+                    <p>During the day I work as a Front-End Developer. During the night I learn and experiment with my hobbies:</p>
+                    <ul class="list list-border">
+                        <li>Composing as an
+                            <a class="text-blue-400 hover:underline" href="https://lifework.bandcamp.com" target="_blank" rel="noreferrer noopener">
+                                    electronic music hoobyist
+                            </a>
+                        </li>
+                        <li>Learning back-end with Django and Ruby on Rails</li>
+                        <li>Exploring hardwares and softwares with a Raspberry Pi.</li>
+                    </ul>
+                </div>
+                <div class="mt-6 md:my-8">
+                    <h2 class="mb-4 text-3xl font-display font-extrabold">My tools</h2>
+                    <p>For any project, working from my own computer I use these softwares/frameworks: </p>
+                    <ul class="list">
+                        <li>- Windows and Linux (as WSL2) as an Operating System.</li>
+                        <li>- <strong>Firefox</strong> for viewing the client side and browsing.</li>
+                        <li>- <strong>Visual Studio Code</strong> for writing code and interacting with Git.</li>
+                        <li>- HTML, CSS, Javascript and Python for making static or dynamic websites.</li>
+                        <li>- <strong>Heroku</strong> and <strong>Supabase</strong> if I need a database and hosting for a side-project.</li>
+                        <li>- <strong>WinSCP</strong> for accessing a VPS.</li>
+                    </ul>
+                    <br>
+                    <div class="p-2 border-solid border-l-4 border-gray-300 bg-gray-100 w-full md:w-10/12">
+                        <p>As a side note, I am currently learning how to use and deploy the Django framework.</p>
+                        <p>By the past, I followed a tutorial (<a class="link" href="https://github.com/liefwerk/notes/tree/master/python/django_vue" target="_blank" rel="noreferrer noopener">taking notes</a>). <a class="link" href="https://github.com/liefwerk/vue_django" target="_blank" rel="noopener noreferrer">Here's the repository</a>.</p>
+                        <p>I am also
+                            <a class="link" href="https://github.com/PierreMrt/job_scraper" target="_blank" rel="noopener noreferrer">collaborating on a Django application with a friend.</a></p>
+                    </div>
+                </div>
+                <div class="mt-6 md:my-8">
+                    <h2 class="mb-4 text-3xl font-display font-extrabold">Contact me</h2>
+                    <p>Contact me with this email <a mailto="njageni@tuta.io" class="link">njageni@tuta.io</a>.</p>
+                        <br>
+                        <p>I am also available on these platforms :</p>
+                        <ul class="list list-border">
+                            <li><a class="link" href="https://github.com/liefwerk/" target="_blank" rel="noopener noreferrer">Github, where I keep my code</a></li>
+                            <li><a class="link" href="https://stackoverflow.com/users/8946085/jageni-nat" target="_blank" rel="noopener noreferrer">Stackoverflow, where I ask questions about coding</a></li>
+                            <li><a class="link" href="https://twitter.com/lifework_music" target="_blank" rel="noopener noreferrer">Twitter, where I participate in silly conversations and get the news</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="bg-gray-800 text-white px-8 py-2 text-right font-mono ">
+                    <p>© 2021 Accollade Polyglotte - Nathanaël Jageni</p>
+                </div>
+            </footer>
+            <!-- <script src="../js/index.js " async defer></script> -->
+</div></body>
+
+</html>

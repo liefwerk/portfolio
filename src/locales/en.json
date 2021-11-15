@@ -3,7 +3,7 @@
         "nav": "fr"
     },
     "hero": {
-        "h1": "Your custom website,<br>handcrafted with care",
+        "h1": "Your custom website, handcrafted with care",
         "sub": "from E-Commerce to landing pages and web applications.",
         "desc": "I am a self-employed front-end web developer, always learning and improving my skills. My everyday languages are French, English and Spanish.",
         "pill-1": "#webdev",
@@ -15,12 +15,15 @@
     },
     "portfolio": {
         "h2": "What I've been building",
+        "sub": "These are the projects that I worked on as a self-employed web dev.",
         "t1": "BIO TRUCK",
         "p1": "A custom made WordPress theme (based on WP Ocean) to host more than 300 products.",
         "t2": "DOCKS-52B",
         "p2": "A simple one-page website for a local business. Made with ParcelJS and Sass.",
         "t3": "WEBRADIO ALPHA",
-        "p3": "Single Page Application made with VueJS. Uses the YouTube IFRAME API and Supabase in the backend."
+        "p3": "Single Page Application made with VueJS. Uses the YouTube IFRAME API and Supabase in the backend.",
+        "t4": "KLEMAIL",
+        "p4": "Emailing verification service made with VueJS. Worked on additionnal front-end features and migrating the website to WordPress."
     },
     "teamportfolio": {
         "h2": "Open source projects",

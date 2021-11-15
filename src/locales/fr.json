@@ -3,7 +3,7 @@
         "lang_1": "en"
     },
     "hero": {
-        "h1": "Votre page web personnalisée,<br>faite avec soin",
+        "h1": "Votre page web personnalisée, faite avec soin",
         "sub": "Boutiques en ligne, pages vitrines et applications web.",
         "desc": "Je suis un développeur front-end toujours en état de curiosité et de dépassement de soi. Je parle le Français, l'Anglais et l'Espagnol.",
         "pill-1": "#devweb",
@@ -15,12 +15,15 @@
     },
     "portfolio": {
         "h2": "Ce que j'ai construis",
+        "sub": "Les projets suivants sont ceux sur lesquels j'ai travaillé en tant qu'auto-entrepreneur.",
         "t1": "BIO TRUCK",
         "p1": "Un WordPress personnalisé (basé sur WP Ocean) pour héberger plus de 300 produits.",
         "t2": "DOCKS-52B",
         "p2": "Un site vitrine pour une entreprise locale. Faite avec ParcelJs et Sass.",
         "t3": "WEBRADIO ALPHA",
-        "p3": "Une application web construite avec VueJs qui utilise l'API Iframe de YouTube et le service Supabase pour sa base de donnée."
+        "p3": "Une application web construite avec VueJs qui utilise l'API Iframe de YouTube et le service Supabase pour sa base de donnée.",
+        "t4": "KLEMAIL",
+        "p4": "Service de vérifications mails sous VueJS. J'ai travaillé sur des services additionnels (front-end) et sur la migration du site sur WordPress."
     },
     "teamportfolio": {
         "h2": "Projets Open source",

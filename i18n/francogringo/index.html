@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lifework - Journal de bord</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="../../../node_modules/leaflet/dist/leaflet.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <span class="toggle-button">
+        <div class="menu-bar menu-bar-top"></div>
+        <div class="menu-bar menu-bar-middle"></div>
+        <div class="menu-bar menu-bar-bottom"></div>
+    </span>
+    <h1 id="header">E-Journal de Bord: Mon trip en Amérique du Sud</h1>
+    <div class="menu-wrap">
+        <nav class="menu-sidebar">
+            <ul class="menu">
+                <li><a href="#">La Carte</a></li>
+                <li><a href="#wrapper-photo">Les Photos</a></li>
+                <li><a href="#">Musique</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p id="copyright">Réalisé avec ❤️ et ☕ par Nathanaël Jageni</p>
+        </div>
+    </div>
+    <div id="map1"></div>
+    <div class="projet">
+        <h2>Quelques infos sur mon voyage</h2>
+        <p>Le voyage a débuté au début de l'automne 2019.</p>
+        <p>L'objectif est de traverser 6 pays de l'Amérique Latine en 🚌 et à 🦶.</p>
+        <h3 id="dernier-lieu">Le dernier endroit</h3>
+    </div>
+    <div id="wrapper-photo">
+        <h2>Mes photos les plus récentes</h2>
+        <div id="photo-container"></div>
+    </div>
+    <div class="footer">
+        <h3>A propos du site</h3>
+        <p>A chaque fois que vous lancez la page, il va chercher les 20 dernières photos postées sur mon compte
+            Instagram (privé).</p>
+        <p>Ensuite, les données géographiques de chaque photo permettent de générer un point sur la carte interactive.
+        </p>
+        <br>
+        <p>© 2019/2020 - Nathanaël Jageni</p>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="../../../node_modules/leaflet/dist/leaflet.js"></script>
+    <script src=".././index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>
