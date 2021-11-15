@@ -4,7 +4,7 @@
     "scripts": {
         "start": "parcel serve ./src/index.html ./src/fr/index.html ./src/about/index.html -p 8090",
         "build": "parcel build ./src/index.html ./src/fr/index.html ./src/about/index.html",
-        "i18n": "static-i18n -l en -i en -i fr"
+        "i18n": "static-i18n -l en -i en -i fr /src"
     },
     "devDependencies": {
         "@parcel/optimizer-cssnano": "2.0.0-nightly.594",

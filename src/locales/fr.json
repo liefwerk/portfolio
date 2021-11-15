@@ -22,6 +22,14 @@
         "t3": "WEBRADIO ALPHA",
         "p3": "Une application web construite avec VueJs qui utilise l'API Iframe de YouTube et le service Supabase pour sa base de donnée."
     },
+    "teamportfolio": {
+        "h2": "Projets Open source",
+        "p1": "Ci-dessous les projets open source auxquels je participe",
+        "t2": "TNB Analytics",
+        "p2": "Site statique (NuxtJS) qui met en avant des données sur la cryptomonnaie TNB. Django est en Backend.",
+        "t3": "TNBC Point Of Sale",
+        "p3": "Application Web Vue3 qui a pour objectif de permettre aux commerçants d'utiliser la cryptomonnaie TNB."
+    },
     "techno": {
         "h2": "Ce que je peux utiliser pour réaliser votre site web",
         "lang": "Langages",

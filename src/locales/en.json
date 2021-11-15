@@ -22,8 +22,16 @@
         "t3": "WEBRADIO ALPHA",
         "p3": "Single Page Application made with VueJS. Uses the YouTube IFRAME API and Supabase in the backend."
     },
+    "teamportfolio": {
+        "h2": "Open source projects",
+        "p1": "These are the current open-source projects I'm working on.",
+        "t2": "TNB Analytics",
+        "p2": "NuxtJS static pages that serves cryptomoney (TNB) Analytics from a Django Backend.",
+        "t3": "TNBC Point Of Sale",
+        "p3": "Vue3 web app serving as a point of sale terminal for commerces (with a Laravel backend)."
+    },
     "techno": {
-        "h2": "Technologies I can use to build your project:",
+        "h2": "Technologies I can use to build your project",
         "lang": "Languages",
         "env": "Working Environments"
     }
