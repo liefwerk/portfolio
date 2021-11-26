@@ -13,6 +13,26 @@
     @apply border-solid border-l-4 border-yellow-300;
 }
 
+/* CARDS */
+
+.card-wrapper {
+    @apply flex flex-row flex-wrap justify-center self-end max-w-sm h-96 mx-3 mb-8 bg-local bg-alfonz bg-cover bg-center shadow rounded-md;
+}
+
+.card-description-wrapper {
+    @apply px-6 py-4 bg-white transition-card rounded-b-md;
+}
+
+.card-tag-wrapper {
+    @apply grid justify-items-stretch opacity-90 text-xs;
+}
+
+.card-tag {
+    @apply text-white py-2 px-4;
+}
+
+/* BACKGROUNDS */
+
 .c-hero {
     background-image: url('../img/binding-light.png');
 }
@@ -21,8 +41,38 @@
     background-image: url('../img/gradient-squares.png');
 }
 
-.c-portfolio-item {
-    background-image: url('../img/grilled-noise.png');
+.bg-portfolio {
+    background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.5), rgb(243, 244, 246)), url('../img/grilled-noise.png');
+}
+
+.bg-biotruck {
+    background-image: url('../img/biotruck.jpeg');
+}
+
+.bg-klemail {
+    background-image: url('../img/klemail.jpg');
+}
+
+.bg-alfonz {
+    background-image: url('../img/alfonz.jpeg');
+}
+
+.bg-docks52b {
+    background-image: url('../img/docks52b.jpeg');
+}
+
+.bg-tnbanalytics {
+    background-image: url('../img/tnb_analytics.png');
+}
+
+.bg-tnbcpos {
+    background-image: url('../img/tnbc_pos.png');
+}
+
+/* TRANSITIONS */
+
+.transition-card {
+    @apply transition duration-500 ease-in-out;
 }
 
 .c-code {
