@@ -20,11 +20,11 @@
 }
 
 .card-description-wrapper {
-    @apply px-6 py-4 bg-white transition-card rounded-b-md;
+    @apply px-6 py-4 bg-white transition-card;
 }
 
 .card-tag-wrapper {
-    @apply grid justify-items-stretch opacity-90 text-xs;
+    @apply grid justify-items-stretch text-xs;
 }
 
 .card-tag {
@@ -46,27 +46,27 @@
 }
 
 .bg-biotruck {
-    background-image: url('../img/biotruck.jpeg');
+    background-image: url('../img/projects/biotruck.jpeg');
 }
 
 .bg-klemail {
-    background-image: url('../img/klemail.jpg');
+    background-image: url('../img/projects/klemail.jpg');
 }
 
 .bg-alfonz {
-    background-image: url('../img/alfonz.jpeg');
+    background-image: url('../img/projects/alfonz.jpeg');
 }
 
 .bg-docks52b {
-    background-image: url('../img/docks52b.jpeg');
+    background-image: url('../img/projects/docks52b.jpeg');
 }
 
 .bg-tnbanalytics {
-    background-image: url('../img/tnb_analytics.png');
+    background-image: url('../img/projects/tnb_analytics.png');
 }
 
 .bg-tnbcpos {
-    background-image: url('../img/tnbc_pos.png');
+    background-image: url('../img/projects/tnbc_pos.png');
 }
 
 /* TRANSITIONS */
