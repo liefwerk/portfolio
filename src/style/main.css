@@ -16,7 +16,7 @@
 /* CARDS */
 
 .card-wrapper {
-    @apply flex flex-row flex-wrap justify-center self-end max-w-sm h-96 mx-3 mb-8 bg-local bg-alfonz bg-cover bg-center shadow rounded-md;
+    @apply flex flex-row flex-wrap justify-center relative self-end max-w-sm h-96 mx-3 mb-8 bg-local bg-alfonz bg-cover bg-center shadow rounded-md;
 }
 
 .card-description-wrapper {
@@ -29,6 +29,10 @@
 
 .card-tag {
     @apply text-white py-2 px-4;
+}
+
+.github-wrapper {
+    @apply absolute p-3 flex flex-row rounded-tr-md rounded-bl-md cursor-pointer transform right-0 ease-in-out duration-200;
 }
 
 /* BACKGROUNDS */
