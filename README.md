@@ -22,4 +22,4 @@ This wasn't my first project using *ParcelJS*  - see [this landing page for a lo
 
 ## :watch: What comes next ?
 
-The main issue with that website is its lack of modularity. it gets pretty hard to add edit content because the HTML isn't separated in different templates. What comes next is reshaping the HTML with some template and using JSON for storing the data of the portfolio items.
+The main issue with that website is its lack of modularity. It gets pretty hard to edit content because the HTML isn't separated in different templates. What comes next is reshaping the HTML with some template and using JSON for storing the data of the portfolio items.
