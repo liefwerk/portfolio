@@ -1,0 +1,57 @@
+@layer components {
+	.link {
+		@apply text-indigo-700 hover:text-indigo-800;
+	}
+	.hire-me-btn {
+		@apply px-4 py-2 bg-indigo-700 hover:bg-indigo-800 text-white rounded-sm shadow;
+	}
+	.link {
+    @apply text-blue-400 hover:underline;
+	}
+	.list {
+		@apply pl-2 my-2;
+	}
+	.list-border {
+		@apply border-solid border-l-4 border-yellow-300;
+	}
+
+	/* CARDS */
+
+	.card-wrapper {
+		@apply flex flex-row flex-wrap justify-center relative self-end max-w-sm h-96 mx-3 mb-8 bg-local bg-alfonz bg-cover bg-center shadow rounded-md;
+	}
+
+	.card-description-wrapper {
+		@apply px-6 py-4 bg-white transition-card;
+	}
+
+	.card-tag-wrapper {
+		@apply grid justify-items-stretch text-xs;
+	}
+
+	.card-tag {
+		@apply text-white py-2 px-4;
+	}
+
+	.github-wrapper {
+		@apply absolute p-3 flex flex-row rounded-tr-md rounded-bl-md cursor-pointer transform right-0 ease-in-out duration-200;
+	}
+
+	/* TRANSITIONS */
+
+	.transition-card {
+		@apply transition duration-500 ease-in-out;
+	}
+
+	.c-code {
+		background-image: url('../img/code_transparent.png');
+	}
+
+	.my-logo {
+		height: 100%;
+	}
+
+	.leading-none {
+		line-height: 1;
+	}	
+}
