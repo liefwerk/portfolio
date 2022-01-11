@@ -2,13 +2,15 @@
 {% extends "layout.njk" %}
 
 {% block body %}
-  <main class="">
-    {% include 'navigation.njk' %}
-    {% include 'presentation.njk' %}
-    {% include 'freelance_projects.njk' %}
+	<main class="">
+		{% include 'navigation.njk' %}
+		{% include 'presentation.njk' %}
+		{% include 'freelance_projects.njk' %}
+		{% include 'oss_projects.njk' %}
+		{% include 'languages.njk' %}
 
-  </main>
-  {# <div class="bg-gray-800 py-2">
-    {% include 'footer.njk' %} #}
-  </div>
+	</main>
+
+	{% include 'footer.njk' %}
+</div>
 {% endblock %}
