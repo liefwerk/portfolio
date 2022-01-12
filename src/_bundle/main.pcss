@@ -19,22 +19,6 @@
 	background-image: linear-gradient(to bottom, rgba(255, 249, 249, 0.5), rgb(243, 244, 246)), url('/img/grilled_noise.png');
 }
 
-.bg-biotruck {
-	background-image: url('../img/projects/biotruck.jpeg');
-}
-
-.bg-klemail {
-	background-image: url('../img/projects/klemail.jpg');
-}
-
-.bg-alfonz {
-	background-image: url('../img/projects/alfonz.jpeg');
-}
-
-.bg-docks52b {
-	background-image: url('../img/projects/docks52b.jpeg');
-}
-
 .bg-tnbanalytics {
 	background-image: url('../img/projects/tnb_analytics.png');
 }
@@ -46,7 +30,7 @@
 /* CARDS */
 		
 .card-wrapper {
-	@apply flex flex-row flex-wrap justify-center relative self-end max-w-sm h-96 mx-3 mb-8 bg-cover bg-center shadow rounded-md;
+	@apply flex flex-row flex-wrap justify-center relative self-center max-w-sm mx-3 mb-8 bg-cover bg-center shadow rounded-md;
 }
 
 .card-description-wrapper {
@@ -62,5 +46,5 @@
 }
 
 .github-wrapper {
-	@apply absolute p-3 flex flex-row rounded-tr-md rounded-bl-md cursor-pointer transform right-0 ease-in-out duration-200;
+	@apply absolute p-3 flex flex-row rounded-bl-md cursor-pointer ease-in-out duration-200 hover:bg-gray-700;
 }
