@@ -1,34 +1,53 @@
 {
-    "name": "portfolio-v3",
-    "license": "BSD-3-Clause",
-    "scripts": {
-        "start": "parcel serve ./src/index.html ./src/fr/index.html ./src/about/index.html -p 8090",
-        "build": "parcel build ./src/index.html ./src/fr/index.html ./src/about/index.html",
-        "i18n": "static-i18n --locale en --locales en --locales fr ./src"
-    },
-    "devDependencies": {
-        "@parcel/optimizer-cssnano": "2.0.0-nightly.594",
-        "@parcel/optimizer-htmlnano": "2.0.0-nightly.594",
-        "@parcel/packager-css": "2.0.0-nightly.594",
-        "@parcel/packager-html": "2.0.0-nightly.594",
-        "@parcel/transformer-css": "2.0.0-nightly.594",
-        "@parcel/transformer-html": "2.0.0-nightly.594",
-        "@parcel/transformer-postcss": "2.0.0-nightly.594",
-        "@parcel/transformer-posthtml": "2.0.0-nightly.594",
-        "@parcel/transformer-sass": "2.0.0-nightly.594",
-        "parcel": "^2.0.0-nightly.574",
-        "parcel-plugin-purgecss": "3.0.0",
-        "sass": "^1.32.7"
-    },
-    "dependencies": {
-        "autoprefixer": "^10.2.4",
-        "desandro-classie": "^1.0.1",
-        "jquery": "^3.5.1",
-        "leaflet": "^1.7.1",
-        "postcss": "^8.2.4",
-        "slick-carousel": "^1.8.1",
-        "slick-lightbox": "^0.2.12",
-        "static-i18n": "^0.2.10",
-        "tailwindcss": "^2.1.0"
-    }
-}
+	"name": "portfolio",
+	"version": "4.0.0",
+	"description": "Personal portfolio made with Eleventy -- TEA stack.",
+	"main": "index.js",
+	"scripts": {
+	  "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
+	  "build:11ty": "eleventy --quiet",
+	  "build:css": "tailwindcss -i src/_bundle/main.pcss -o dist/assets/main.bundle.css --minify --postcss",
+	  "build:js": "esbuild src/_bundle/main.js --outfile=dist/assets/main.bundle.js --bundle",
+	  "clean": "rm -rf dist",
+	  "dev": "cross-env NODE_ENV=development npm-run-all -p dev:*",
+	  "dev:11ty": "eleventy --serve --quiet",
+	  "dev:css": "tailwindcss -i src/_bundle/main.pcss -o dist/assets/main.bundle.css --watch --postcss",
+	  "dev:js": "esbuild src/_bundle/main.js --outfile=dist/assets/main.bundle.js --bundle --watch"
+	},
+	"repository": {
+	  "type": "git",
+	  "url": "git+https://github.com/liefwerk/portfolio"
+	},
+	"prettier": {
+	  "semi": false,
+	  "singleQuote": true,
+	  "tabWidth": 2,
+	  "trailingComma": "es5",
+	  "htmlWhitespaceSensitivity": "ignore"
+	},
+	"keywords": [
+	  "eleventy",
+	  "tailwind",
+	  "alpine"
+	],
+	"author": "Accolade Polyglotte",
+	"license": "MIT",
+	"bugs": {
+	  "url": "https://github.com/liefwerk/portfolio/issues"
+	},
+	"homepage": "https://github.com/liefwerk/portfolio#readme",
+	"dependencies": {
+	  "alpinejs": "^3.1.0"
+	},
+	"devDependencies": {
+	  "@11ty/eleventy": "^0.12.1",
+	  "@tailwindcss/forms": "^0.2.1",
+	  "@tailwindcss/typography": "^0.4.1",
+	  "cross-env": "^6.0.3",
+	  "esbuild": "^0.12.9",
+	  "npm-run-all": "^4.1.5",
+	  "postcss-import": "^14.0.0",
+	  "tailwindcss": "^2.2.2",
+	  "tailwindcss-debug-screens": "^1.1.0"
+	}
+  }

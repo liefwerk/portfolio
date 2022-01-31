@@ -1,0 +1,35 @@
+@layer components {
+	.link {
+		@apply text-indigo-700 hover:text-indigo-800;
+	}
+	.hire-me-btn {
+		@apply px-4 py-2 bg-indigo-700 hover:bg-indigo-800 text-white rounded-sm shadow;
+	}
+	.link {
+    @apply text-blue-400 hover:underline;
+	}
+	.list {
+		@apply pl-2 my-2;
+	}
+	.list-border {
+		@apply border-solid border-l-4 border-yellow-300;
+	}
+
+	/* TRANSITIONS */
+
+	.transition-card {
+		@apply transition duration-500 ease-in-out;
+	}
+
+	.c-code {
+		background-image: url('../img/code_transparent.png');
+	}
+
+	.my-logo {
+		height: 100%;
+	}
+
+	.leading-none {
+		line-height: 1;
+	}	
+}

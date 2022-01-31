@@ -1,0 +1,30 @@
+<div class="w-full text-gray-800 text-center bg-local bg-portfolio bg-blend-screen px-4 pt-12 pb-12 md:px-0">
+	<h2 class="text-3xl font-display font-extrabold mt-10" data-t="porfolio.h2">What I've been building</h2>
+	<p class="mb-16 text-gray-500" data-t="porfolio.sub">These are the projects that I worked on as a self-employed web dev.</p>
+	<div class="sm:container flex flex-row flex-wrap justify-center mx-auto mb-8">
+		{%- for item in freelance_projects -%}
+			<div class="card-wrapper">
+				<img src="/img/projects/{{ item.image }}.jpeg" />
+				<a class="self-end" href="https://bio-truck.fr" target="_blank" rel="noreferrer noopener">
+					<div class="card-description-wrapper">
+						<h3 class="text-2xl pb-2 font-bold font-display">{{ item.title }}</h3>
+						<p>{{ item.card_description }}</p>
+					</div>
+					<div class="card-tag-wrapper grid-cols-3">
+						{% for tag in item.tags %}
+							<p class="card-tag {{ tag.color }}">{{ tag.name }}</p>
+						{% endfor %}
+					</div>
+				</a>
+				{% if item.github_link %}
+					<a href="{{ item.github_link }}" target="_blank" class="github-wrapper right-0 bg-gray-500">
+					<img 
+						class="h-6 w-6 self-center"
+						src="./img/icons/GitHub-Mark-Light-32px.png" 
+						alt="Github Logo" />
+					</a>
+				{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+</div>

@@ -1,0 +1,16 @@
+{% set title = 'Home' %}
+{% extends "layout.njk" %}
+
+{% block body %}
+	<main class="">
+		{% include 'navigation.njk' %}
+		{% include 'presentation.njk' %}
+		{% include 'freelance_projects.njk' %}
+		{% include 'oss_projects.njk' %}
+		{% include 'languages.njk' %}
+
+	</main>
+
+	{% include 'footer.njk' %}
+</div>
+{% endblock %}
