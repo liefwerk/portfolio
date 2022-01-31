@@ -2,50 +2,30 @@
 	<h2 class="text-3xl font-display font-extrabold mt-10" data-t="teamportfolio.h2">Open-source projects I'm taking part of</h2>
 	<p class="mb-16 text-gray-500" data-t="teamportfolio.p1">These are the current open-source projects I'm working on.</p>
 	<div class="sm:container flex flex-row flex-wrap justify-center mx-auto mb-8">
-			<!-- TNB ANALYTICS -->
-			<div class="card-wrapper bg-tnbanalytics">
-				<a class="self-end" href="http://tnbanalytics.com" target="_blank" rel="noreferrer noopener">
-				<div class="card-description-wrapper">
-					<h3 class="text-2xl pb-2 font-bold font-display" data-t="teamportfolio.t2">TNB Analytics</h3>
-					<p data-t="teamportfolio.p2">NuxtJS static page that serves cryptomoney (TNBC) Analytics from a Django Backend.</p>
-				</div>
-				<div class="card-tag-wrapper grid-cols-3">
-					<p class="card-tag bg-yellow-800 text-white py-2 px-4 rounded-bl-md">NuxtJS</p>
-					<p class="card-tag bg-red-900 text-white py-2 px-4">Static Website</p>
-					<p class="card-tag bg-gray-600 text-white py-2 px-4 rounded-br-md">Github Pages</p>
-				</div>
-			</a>
-			<!-- Github Source Code Link -->
-			<a href="https://github.com/Techminate/TNBC-POS-Frontend" target="_blank" class="github-wrapper bg-gray-700">
-				<img 
-					class="h-auto w-6"
-					src="./img/icons/GitHub-Mark-Light-32px.png" 
-					alt="Github Logo" />
-				<p class="self-center pl-3 text-white text-sm">Check the source code</p>
-			</a>
-		</div>
-		<!-- TNB POS -->
-		<div class="card-wrapper bg-tnbcpos">
-			<a class="self-end" href="https://zen-ardinghelli-e90799.netlify.app" rel="noreferrer noopener">
-				<div class="card-description-wrapper">
-					<h3 class="text-2xl pb-2 font-bold font-display" data-t="teamportfolio.t3">TNB Point Of Sale</h3>
-					<p data-t="teamportfolio.p3">Vue3 web app serving as a point of sale terminal for commerces (with a Laravel backend).</p>
-				</div>
-				<div class="card-tag-wrapper grid-cols-3">
-					<p class="card-tag bg-yellow-800 text-white py-2 px-4 rounded-bl-md">Vue3</p>
-					<p class="card-tag bg-red-900 text-white py-2 px-4">Web App</p>
-					<p class="card-tag bg-gray-600 text-white py-2 px-4 rounded-br-md">Netlify</p>
-				</div>
-			</a>
-			<!-- Github Source Code Link -->
-			<a href="https://github.com/Techminate/TNBC-POS-Frontend" target="_blank" class="github-wrapper bg-gray-700">
-				<img 
-					class="h-auto w-6"
-					src="./img/icons/GitHub-Mark-Light-32px.png" 
-					alt="Github Logo" />
-				<p class="self-center pl-3 text-white text-sm">Check the source code</p>
-			</a>
-		</div>
+		{%- for item in oss_projects -%}
+			<div class="card-wrapper">
+				<img src="/img/projects/{{ item.image }}.jpeg" />
+				<a class="self-end" href="https://bio-truck.fr" target="_blank" rel="noreferrer noopener">
+					<div class="card-description-wrapper">
+						<h3 class="text-2xl pb-2 font-bold font-display">{{ item.title }}</h3>
+						<p>{{ item.card_description }}</p>
+					</div>
+					<div class="card-tag-wrapper grid-cols-3">
+						{% for tag in item.tags %}
+							<p class="card-tag {{ tag.color }}">{{ tag.name }}</p>
+						{% endfor %}
+					</div>
+				</a>
+				{% if item.github_link %}
+					<a href="{{ item.github_link }}" target="_blank" class="github-wrapper right-0 bg-gray-500">
+					<img 
+						class="h-6 w-6 self-center"
+						src="./img/icons/GitHub-Mark-Light-32px.png" 
+						alt="Github Logo" />
+					</a>
+				{% endif %}
+			</div>
+		{% endfor %}
 	</div>
 </div>
 </div>
