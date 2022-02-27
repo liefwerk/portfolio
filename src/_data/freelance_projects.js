@@ -31,7 +31,7 @@ module.exports = [
 			{ name: 'Personal Project', color: 'bg-red-900' },
 			{ name: 'Heroku', color: 'bg-gray-600' } 
 		],
-		link: 'alfonz-music.herokuapp.com/',
+		link: 'https://alfonz-music.herokuapp.com/',
 		github_link: 'https://github.com/liefwerk/webradio_alpha',
 		image: 'alfonz'
 	},
