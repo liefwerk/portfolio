@@ -1,5 +1,41 @@
 module.exports = [
 	{ 
+		title: 'BLOCKBEAR',
+		card_description: 'A custom WordPress theme with custom Gutenberg Blocks',
+		tags: [
+			{ name: 'Wordpress', color: 'bg-yellow-800' },
+			{ name: 'Multi-page', color: 'bg-red-900' },
+			{ name: 'Self-hosted', color: 'bg-gray-600' }
+		],
+		link: 'https://blockbear.io',
+		github_link: null,
+		image: 'blockbear'
+	},
+	{ 
+		title: 'INMA',
+		card_description: 'A custom WordPress theme with custom Gutenberg Blocks',
+		tags: [
+			{ name: 'Wordpress', color: 'bg-yellow-800' },
+			{ name: 'Multi-page', color: 'bg-red-900' },
+			{ name: 'Self-hosted', color: 'bg-gray-600' }
+		],
+		link: 'https://inma.uy/en/homepage/',
+		github_link: null,
+		image: 'inma'
+	},
+	{ 
+		title: 'CÁTEDRA DE ONCOLOGÍA',
+		card_description: 'A custom WordPress theme with custom Gutenberg Blocks',
+		tags: [
+			{ name: 'Wordpress', color: 'bg-yellow-800' },
+			{ name: 'Multi-page', color: 'bg-red-900' },
+			{ name: 'Self-hosted', color: 'bg-gray-600' }
+		],
+		link: 'https://www.oncologiamedica.hc.edu.uy/',
+		github_link: null,
+		image: 'catedra'
+	},
+	{ 
 		title: 'BIO TRUCK',
 		card_description: 'A custom made WordPress theme (based on WP Ocean) to host more than 300 products.',
 		tags: [
@@ -25,7 +61,7 @@ module.exports = [
 	},
 	{ 
 		title: 'ALFONZ',
-		card_description: 'Single Page Application made with VueJS. Uses the YouTube IFRAME API and Supabase in the backend.',
+		card_description: '<!> Currently unavailable for maintenance </!> Single Page Application made with VueJS. Uses the YouTube IFRAME API and Supabase in the backend.',
 		tags: [
 			{ name: 'VueJS', color: 'bg-yellow-800' },
 			{ name: 'Personal Project', color: 'bg-red-900' },

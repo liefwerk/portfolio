@@ -1,12 +1,10 @@
 import Alpine from 'alpinejs'
-import UkraineFlag from './scripts/ukraineFlag'
 
 window.Alpine = Alpine
 
 // Start Alpine when the page is ready.
 window.addEventListener('DOMContentLoaded', () => {
   Alpine.start()
-  UkraineFlag()
 });
 
 // Basic Store Example in Alpine.
